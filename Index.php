@@ -30,11 +30,17 @@ echo json_encode($usuarios);*/
 
 //var_dump ($aluno);
 
-$usuario = new Usuario();
-$usuario->loadById(4);
-$usuario->update("professor", "1234");
+//Alterar um usuário
+//$usuario = new Usuario();
+//$usuario->loadById(4);
+//$usuario->update("professor", "1234");
 
 //var_dump($usuario);
+//echo $usuario;
+
+$usuario = new Usuario();
+$usuario->loadById(4);
+$usuario->delete();
 
 echo $usuario;
 
